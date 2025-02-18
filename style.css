@@ -1,0 +1,103 @@
+@font-face {
+    font-family: "SofiaSans";
+    src: url(../AniLifeLinks/fonts/SofiaSans.ttf);
+}
+
+body
+{
+    background-color: #18171C;
+    color: #fff;
+
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+
+p, img {
+    padding: 0px;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.container
+{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.avatar
+{
+    height: 128px;
+    width: 128px;
+    border-radius: 50%;
+}
+
+.title
+{
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    font-family: "SofiaSans";
+}
+
+.description
+{
+    font-size: 1rem;
+    text-align: center;
+    max-width: 450px;
+    margin: 0 auto;
+    font-family: "SofiaSans";
+    padding: 0 0.5rem 0 0.5rem;
+}
+
+.links
+{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.links img
+{
+    height: 32px;
+    width: 32px;
+    fill: white;
+}
+
+.footer
+{
+    position: absolute;
+    bottom: 0;
+    left: auto;
+    padding-bottom: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer p
+{
+    font-family: "SofiaSans";
+}
+
+.footer p a {
+    text-decoration:underline;
+}
