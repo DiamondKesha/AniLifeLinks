@@ -1,10 +1,18 @@
 @font-face {
     font-family: "SofiaSans";
-    src: url(/fonts/SofiaSans.ttf);
+    src: url(../fonts/SofiaSans.ttf);
 }
+
+@keyframes animation {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
 
 body
 {
+    opacity: 0;
+    animation: animation 3.5s forwards;
+
     background-color: #18171C;
     color: #fff;
 
@@ -78,8 +86,20 @@ a {
 {
     height: 32px;
     width: 32px;
-    fill: white;
+
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
 }
+
+    .links img:hover{
+        transform: scale(1.2);
+    }
+
+    .links img:hover::after{
+        transform: scale(1);
+    }
+
 
 .footer
 {
