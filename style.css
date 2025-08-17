@@ -8,6 +8,13 @@
     100% {opacity: 1;}
   }
 
+#backgroundVideo {
+  width: 100vw;
+  height: 100vh;
+  background-position: absolute;
+  object-fit: cover;
+}
+
 body
 {
     opacity: 0;
@@ -46,16 +53,32 @@ a {
     gap: 1rem;
 }
 
-.avatar
+.content
 {
-    height: 128px;
-    width: 128px;
-    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.title
+.header
 {
-    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.header-logo
+{
+    height: 120px;
+    width: 120px;
+}
+
+.header-title
+{
+    font-size: 3.5rem;
     font-weight: 800;
     text-align: center;
     margin: 0 auto;
@@ -63,18 +86,28 @@ a {
     font-family: "SofiaSans";
 }
 
+.header-title:hover
+{
+    cursor: default;
+}
+
 .description
 {
+    backdrop-filter: blur(5px);
+    background: rgba(0, 0, 0, 0.3);
+    
     font-size: 1rem;
     text-align: center;
     max-width: 450px;
     margin: 0 auto;
     font-family: "SofiaSans";
-    padding: 0 0.5rem 0 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
 }
 
 .links
 {
+    margin-top: 1rem;
     display: flex;
     flex-direction: row;
     gap: 1rem;
@@ -99,25 +132,3 @@ a {
     .links img:hover::after{
         transform: scale(1);
     }
-
-
-.footer
-{
-    position: absolute;
-    bottom: 0;
-    left: auto;
-    padding-bottom: 0.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.footer p
-{
-    font-family: "SofiaSans";
-}
-
-.footer p a {
-    text-decoration:underline;
-}
